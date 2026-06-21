@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Kethavath Aravind</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color:#0f172a;
+            color:#e2e8f0;
+            line-height:1.7;
+            animation: pageLoad 1s ease;
+        }
+
+        @keyframes pageLoad{
+            from{
+                opacity:0;
+            }
+            to{
+                opacity:1;
+            }
+        }
+
+        .container{
+            max-width:1000px;
+            margin:auto;
+            padding:80px 20px;
+        }
+
+        .contact-heading{
+            text-align:center;
+            margin-bottom:60px;
+            animation: slideDown 1s ease;
+        }
+
+        .contact-heading h1{
+            color:#38bdf8;
+            font-size:3rem;
+            margin-bottom:15px;
+            font-weight:600;
+        }
+
+        .contact-heading p{
+            font-size:0.95rem;
+            color:#94a3b8;
+            font-weight:300;
+        }
+
+        @keyframes slideDown{
+            from{
+                opacity:0;
+                transform:translateY(-40px);
+            }
+            to{
+                opacity:1;
+                transform:translateY(0);
+            }
+        }
+
+        .contact-card{
+            background:#1e293b;
+            border:1px solid #334155;
+            border-radius:20px;
+            padding:35px;
+            margin-bottom:40px;
+            transition:0.3s;
+            animation: fadeUp 1s ease;
+        }
+
+        .contact-card:hover{
+            border-color:#38bdf8;
+            transform:translateY(-5px);
+            box-shadow:0 10px 25px rgba(56,189,248,0.15);
+        }
+
+        .contact-card h2{
+            color:#38bdf8;
+            margin-bottom:20px;
+            font-size:1.5rem;
+        }
+
+        .contact-card p,
+        .contact-card a{
+            font-size:0.95rem;
+            color:#94a3b8;
+            font-weight:300;
+            text-decoration:none;
+            display:block;
+            margin-bottom:12px;
+        }
+
+        .contact-card a:hover{
+            color:#38bdf8;
+        }
+
+        .contact-form{
+            background:#1e293b;
+            border:1px solid #334155;
+            border-radius:20px;
+            padding:35px;
+            animation: fadeUp 1.2s ease;
+        }
+
+        .contact-form h2{
+            color:#38bdf8;
+            margin-bottom:25px;
+        }
+
+        .contact-form input,
+        .contact-form textarea{
+            width:100%;
+            padding:15px;
+            margin-bottom:18px;
+            border:none;
+            outline:none;
+            border-radius:10px;
+            background:#0f172a;
+            color:#e2e8f0;
+            border:1px solid #334155;
+            font-size:0.95rem;
+        }
+
+        .contact-form textarea{
+            resize:none;
+            height:150px;
+        }
+
+        .contact-form button{
+            background:#38bdf8;
+            color:#0f172a;
+            border:none;
+            padding:12px 30px;
+            border-radius:8px;
+            font-size:1rem;
+            font-weight:600;
+            cursor:pointer;
+            transition:0.3s;
+        }
+
+        .contact-form button:hover{
+            background:#0ea5e9;
+            transform:translateY(-3px);
+        }
+
+        @keyframes fadeUp{
+            from{
+                opacity:0;
+                transform:translateY(40px);
+            }
+            to{
+                opacity:1;
+                transform:translateY(0);
+            }
+        }
+
+        footer{
+            text-align:center;
+            padding:30px;
+            margin-top:50px;
+            border-top:1px solid #1e293b;
+            color:#64748b;
+            font-size:0.85rem;
+        }
+
+        @media(max-width:768px){
+
+            .contact-heading h1{
+                font-size:2.2rem;
+            }
+
+            .container{
+                padding:50px 15px;
+            }
+            .cont{
+                margin-right: 10rem;
+            }
+
+        }
+
+         .back-button{
+            color: black;
+            text-decoration: none;
+            font-weight: bolder;
+        }
+        .cont{
+            position: sticky;
+            margin-left:60rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 2.5rem;
+            width: 80px;
+            background-color: aliceblue;
+            border-radius: 10%;
+        }
+        .cont:hover{
+          transform: translateY(2px);
+          opacity: 0.5;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="cont">
+            <a href="Myportfolio.html" class="back-button">←Back</a>
+        </div>
+
+        <div class="contact-heading">
+            <h1>Contact Me</h1>
+
+            <p style="font-size: 0.95rem;color: #94a3b8;font-weight: 300;">
+                I'm always open to discussing internships, projects,
+                collaborations, and new opportunities.
+            </p>
+        </div>
+
+        <div class="contact-card">
+
+            <h2>Get In Touch</h2>
+
+            <p>📧 Email: kethavatharavind3@gmail.com</p>
+
+            <a href="https://github.com/KethavathAravind123">
+                🔗 GitHub: github.com/KethavathAravind123
+            </a>
+
+            <a href="https://www.linkedin.com/in/kethavath-aravind-1ab920378?utm_source=share_via&utm_content=profile&utm_medium=member_android">
+                💼 LinkedIn: https://www.linkedin.com/in/kethavath-aravind-1ab920378?utm_source=share_via&utm_content=profile&utm_medium=member_android
+            </a>
+
+            <p>📍 Telangana | Hyderabad, India</p>
+
+        </div>
+
+        <div class="contact-form">
+
+            <h2>Send a Message</h2>
+
+            <form>
+
+                <input
+                    type="text"
+                    placeholder="Your Name"
+                    required
+                >
+
+                <input
+                    type="email"
+                    placeholder="Your Email"
+                    required
+                >
+
+                <input
+                    type="text"
+                    placeholder="Subject"
+                >
+
+                <textarea
+                    placeholder="Write your message..."
+                    required
+                ></textarea>
+
+                <button type="submit">
+                    Send Message
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <footer>
+        © 2026 Kethavath Aravind | All Rights Reserved
+    </footer>
+
+</body>
+</html>

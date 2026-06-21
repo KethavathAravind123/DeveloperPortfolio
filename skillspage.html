@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills | Kethavath Aravind</title>
+    <link rel="stylesheet" href="skills.css">
+</head>
+<body>
+
+    <header>
+        <h2>Kethavath Aravind</h2>
+        <a href="Myportfolio.html">← Back to Portfolio</a>
+    </header>
+
+    <section class="hero">
+        <h1>Skills & Expertise</h1>
+        <p style="font-size: 0.95rem;color: #94a3b8;font-weight: 300;">
+            Technologies and tools I use to build modern web applications,
+            mobile apps, APIs, and database-driven solutions.
+        </p>
+    </section>
+
+    <section class="skills-container">
+
+        <div class="skill-card">
+            <h3>Frontend Development</h3>
+            <p style="font-size: 0.95rem;color: #94a3b8;font-weight: 300;">HTML, CSS, JavaScript, Responsive Design</p>
+        </div>
+
+        <div class="skill-card">
+            <h3>Mobile Development</h3>
+            <p style="font-size: 0.95rem;color: #94a3b8;font-weight: 300;">Flutter, Dart, Cross-Platform Applications</p>
+        </div>
+
+        <div class="skill-card">
+            <h3>Backend Development</h3>
+            <p style="font-size: 0.95rem;color: #94a3b8;font-weight: 300;">Django, Django REST Framework, REST APIs</p>
+        </div>
+
+        <div class="skill-card">
+            <h3>Database Management</h3>
+            <p style="font-size: 0.95rem;color: #94a3b8;font-weight: 300;">SQL, Database Design, Query Optimization</p>
+        </div>
+
+        <div class="skill-card">
+            <h3>Programming</h3>
+            <p style="font-size: 0.95rem;color: #94a3b8;font-weight: 300;">Python, Problem Solving, OOP Concepts</p>
+        </div>
+
+        <div class="skill-card">
+            <h3>Version Control</h3>
+            <p style="font-size: 0.95rem;color: #94a3b8;font-weight: 300;">Git, GitHub, Collaboration Workflows</p>
+        </div>
+
+    </section>
+
+    <section class="technologies">
+
+        <h2>Technologies I Work With</h2>
+
+        <div class="tech-list">
+            <span>Flutter</span>
+            <span>Dart</span>
+            <span>Python</span>
+            <span>Django</span>
+            <span>DRF</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>SQL</span>
+            <span>Git</span>
+            <span>GitHub</span>
+        </div>
+
+    </section>
+
+    <footer style="font-size: 0.95rem;color: #94a3b8;font-weight: 300;">
+        © 2026 Kethavath Aravind | Skills Portfolio
+    </footer>
+
+</body>
+<style>
+    *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Segoe UI',sans-serif;
+    background:#0f172a;
+    color:#e2e8f0;
+    animation: pageLoad 1s ease;
+}
+
+@keyframes pageLoad{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
+}
+
+/* Header */
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+    border-bottom:1px solid #1e293b;
+}
+
+header h2{
+    color:#38bdf8;
+}
+
+header a{
+    text-decoration:none;
+    color:#94a3b8;
+    transition:0.3s;
+}
+
+header a:hover{
+    color:#38bdf8;
+}
+
+/* Hero */
+
+.hero{
+    text-align:center;
+    padding:100px 20px;
+    animation: slideDown 1s ease;
+}
+
+.hero h1{
+    font-size:3rem;
+    color:#38bdf8;
+    margin-bottom:20px;
+}
+
+.hero p{
+    max-width:700px;
+    margin:auto;
+    color:#94a3b8;
+    font-size:1.1rem;
+}
+
+@keyframes slideDown{
+    from{
+        opacity:0;
+        transform:translateY(-50px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* Skill Cards */
+
+.skills-container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+    padding:50px 0;
+}
+
+.skill-card{
+    background:#1e293b;
+    padding:30px;
+    border-radius:20px;
+    border:1px solid #334155;
+    transition:0.4s;
+    animation: fadeUp 1s ease;
+}
+
+.skill-card:hover{
+    transform:translateY(-10px);
+    border-color:#38bdf8;
+    box-shadow:0 0 20px rgba(56,189,248,.3);
+}
+
+.skill-card h3{
+    color:#38bdf8;
+    margin-bottom:15px;
+}
+
+.skill-card p{
+    color:#cbd5e1;
+}
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* Technologies */
+
+.technologies{
+    text-align:center;
+    padding:80px 20px;
+}
+
+.technologies h2{
+    color:#38bdf8;
+    margin-bottom:40px;
+}
+
+.tech-list{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.tech-list span{
+    background:#1e293b;
+    color:#38bdf8;
+    padding:12px 20px;
+    border-radius:50px;
+    border:1px solid #334155;
+    transition:0.3s;
+}
+
+.tech-list span:hover{
+    background:#38bdf8;
+    color:#0f172a;
+    transform:scale(1.05);
+}
+
+/* Footer */
+
+footer{
+    text-align:center;
+    padding:30px;
+    border-top:1px solid #1e293b;
+    color:#64748b;
+    margin-top:50px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    header{
+        padding:20px;
+    }
+
+    .hero h1{
+        font-size:2.2rem;
+    }
+
+    .skills-container{
+        width:95%;
+    }
+}
+</style>
+</html>

@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aravind | Portfolio</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      scroll-behavior:smooth;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      background:#0f172a;
+      color:white;
+    }
+
+    nav{
+      width:100%;
+      padding:20px 10%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      position:sticky;
+      top:0;
+      background:#111827;
+    }
+
+    nav h1{
+      color:#38bdf8;
+    }
+
+    nav ul{
+      display:flex;
+      gap:20px;
+      list-style:none;
+    }
+
+    nav ul li a{
+      color:white;
+      text-decoration:none;
+      transition:0.3s;
+    }
+
+    nav ul li a:hover{
+      color:#38bdf8;
+    }
+
+    .hero{
+      height:90vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      padding:20px;
+    }
+
+    .hero-content h2{
+      font-size:55px;
+      margin-bottom:10px;
+    }
+
+    .hero-content span{
+      color:#38bdf8;
+    }
+
+    .hero-content p{
+      color:#cbd5e1;
+      margin:20px 0;
+      font-size:18px;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:12px 25px;
+      background:#38bdf8;
+      color:black;
+      text-decoration:none;
+      border-radius:8px;
+      font-weight:bold;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      transform:scale(1.05);
+    }
+
+    section{
+      padding:80px 10%;
+    }
+
+    .title{
+      font-size:35px;
+      margin-bottom:40px;
+      color:#38bdf8;
+      text-align:center;
+    }
+
+    .about p{
+      max-width:700px;
+      margin:auto;
+      text-align:center;
+      line-height:1.8;
+      color:#cbd5e1;
+    }
+
+    .skills-container{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+      gap:20px;
+    }
+
+    .skill-box{
+      background:#1e293b;
+      padding:25px;
+      text-align:center;
+      border-radius:12px;
+      transition:0.3s;
+    }
+
+    .skill-box:hover{
+      transform:translateY(-5px);
+      background:#334155;
+    }
+
+    .projects{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+      gap:30px;
+    }
+
+    .project-card{
+      background:#1e293b;
+      border-radius:15px;
+      overflow:hidden;
+      transition:0.3s;
+    }
+
+    .project-card:hover{
+      transform:translateY(-8px);
+    }
+
+    .project-card img{
+      width:100%;
+      height:200px;
+      object-fit:cover;
+    }
+
+    .project-content{
+      padding:20px;
+    }
+
+    .project-content h3{
+      margin-bottom:10px;
+    }
+
+    .project-content p{
+      color:#cbd5e1;
+      margin-bottom:15px;
+      line-height:1.6;
+    }
+
+    .contact{
+      text-align:center;
+    }
+
+    .contact p{
+      margin:10px 0;
+      color:#cbd5e1;
+    }
+
+    footer{
+      text-align:center;
+      padding:20px;
+      background:#111827;
+      margin-top:40px;
+      color:#94a3b8;
+    }
+
+    @media(max-width:768px){
+
+      .hero-content h2{
+        font-size:38px;
+      }
+
+      nav{
+        flex-direction:column;
+        gap:15px;
+      }
+
+      nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <h1>Aravind</h1>
+
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+
+      <h2>Hi, I'm <span>Aravind</span></h2>
+
+      <p>
+        Flutter & Web Developer passionate about building
+        modern mobile apps and responsive websites.
+      </p>
+
+      <a href="#" class="btn">Download Resume</a>
+
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="about">
+
+    <h2 class="title">About Me</h2>
+
+    <p>
+      I'm a B.Tech student and developer skilled in Flutter,
+      Django, HTML, CSS, JavaScript, and Python. I enjoy
+      building modern applications with clean UI and
+      user-friendly experiences.
+    </p>
+
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+
+    <h2 class="title">Skills</h2>
+
+    <div class="skills-container">
+
+      <div class="skill-box">Flutter</div>
+      <div class="skill-box">Django</div>
+      <div class="skill-box">Python</div>
+      <div class="skill-box">HTML</div>
+      <div class="skill-box">CSS</div>
+      <div class="skill-box">JavaScript</div>
+      <div class="skill-box">SQL</div>
+      <div class="skill-box">Git & GitHub</div>
+
+    </div>
+
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+
+    <h2 class="title">Projects</h2>
+
+    <div class="projects">
+
+      <!-- Project 1 -->
+      <div class="project-card">
+
+        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1000" alt="project">
+
+        <div class="project-content">
+
+          <h3>PaperNova</h3>
+
+          <p>
+            A Flutter-based document management application
+            with authentication and cloud storage support.
+          </p>
+
+          <a href="#" class="btn">View Project</a>
+
+        </div>
+
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card">
+
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1000" alt="project">
+
+        <div class="project-content">
+
+          <h3>NGO Landing Page</h3>
+
+          <p>
+            Responsive NGO website built using HTML and CSS
+            with modern UI design and dark mode.
+          </p>
+
+          <a href="#" class="btn">View Project</a>
+
+        </div>
+
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card">
+
+        <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1000" alt="project">
+
+        <div class="project-content">
+
+          <h3>Task Manager App</h3>
+
+          <p>
+            Productivity app built using Flutter and Firebase
+            with task tracking and notifications.
+          </p>
+
+          <a href="#" class="btn">View Project</a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+
+    <h2 class="title">Contact</h2>
+
+    <p>Email: aravind@example.com</p>
+    <p>GitHub: github.com/aravind</p>
+    <p>LinkedIn: linkedin.com/in/aravind</p>
+
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    © 2026 Aravind | All Rights Reserved
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+</head>
+<body>
+    <div class="div-section">
+        <div class="cont">
+            <a href="Myportfolio.html" class="back-button">←Back</a>
+        </div>
+        <div class="about-me-section">
+          <h1>About Me</h1>
+          <p style="font-size: 0.95rem;color: #94a3b8;font-weight: 300;">I am Kethavath Aravind, a B.Tech
+             student and aspiring Full-Stack Developer 
+             with a strong interest in building practical 
+             and user-focused software solutions. 
+             I enjoy transforming ideas into real applications and continuously 
+             improving my skills through hands-on projects and learning. 
+             My approach to development is driven by curiosity, consistency, 
+             and a desire to create technology that solves real-world problems. 
+             I believe that continuous learning, adaptability, and attention to detail are 
+             essential qualities for growth in the tech industry, and I strive to apply these values 
+             in every project I work on.</p>
+         </div>
+
+         <div class="introduction-section">
+            <h1>Skills & Expertise</h1>
+            <p style="font-size: 0.95rem;color: #94a3b8;font-weight: 300;">I am comfortable working with Frontend Development,
+                 Mobile App Development, Databases, and Backend APIs. 
+                 My technical skills include Flutter, Django REST Framework, Python, HTML, CSS, JavaScript, SQL, Git, and GitHub. 
+                 I have experience designing responsive web interfaces, developing cross-platform mobile applications,
+                  building RESTful APIs, and working with databases to create efficient and scalable solutions. 
+                  I enjoy exploring new technologies and expanding my knowledge in software development while 
+                  focusing on writing clean,
+                 maintainable, and user-friendly code.</p>
+         </div>
+    </div>
+
+</body>
+<style>
+    *{
+      padding: 0;
+      margin:0;
+      box-sizing: border-box;
+    }
+
+    .back-button{
+            color: black;
+            text-decoration: none;
+            font-weight: bolder;
+        }
+        .cont{
+            position: sticky;
+            margin-left:39rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 2.5rem;
+            width: 80px;
+            background-color: aliceblue;
+            border-radius: 10%;
+        }
+        .cont:hover{
+          transform: translateY(2px);
+          opacity: 0.5;
+        }
+
+    body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0f172a;
+    color: #e2e8f0;
+    line-height: 1.7;
+    animation: pageLoad 1s ease-in-out;
+}
+@keyframes pageLoad{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.about-me-section h1,
+.introduction-section h1{
+    text-align: center;
+    color: #38bdf8;
+    margin-bottom: 25px;
+    font-size: 2.5rem;
+}
+
+.about-me-section,
+.introduction-section{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-me-section p,
+.introduction-section p{
+    width: 80%;
+    max-width: 900px;
+    padding: 30px;
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 20px;
+    color: #cbd5e1;
+    font-size: 1.05rem;
+    text-align: justify;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+}
+
+.about-me-section p:hover,
+.introduction-section p:hover{
+    transform: translateY(-8px);
+    border-color: #38bdf8;
+    box-shadow: 0 10px 25px rgba(56, 189, 248, 0.2);
+}
+
+.div-section{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 50px 0;
+}
+
+
+.about-me-section{
+    animation: slideLeft 1s ease;
+}
+
+.introduction-section{
+    animation: slideRight 1.2s ease;
+}
+
+@keyframes slideLeft{
+    from{
+        opacity: 0;
+        transform: translateX(-80px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideRight{
+    from{
+        opacity: 0;
+        transform: translateX(80px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Responsive */
+
+@media (max-width: 768px){
+
+    .about-me-section h1,
+    .introduction-section h1{
+        font-size: 2rem;
+    }
+
+    .about-me-section p,
+    .introduction-section p{
+        width: 92%;
+        padding: 20px;
+        font-size: 1rem;
+    }
+}
+</style>
+</html>
